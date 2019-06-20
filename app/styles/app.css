@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch
+  }
+  td, th {
+    border: 1px solid grey;
+  }
+
+  .table-wrapper {
+    display: block;
+    height: 90vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    position: relative;
+    background: #fff;
+  }

@@ -1,0 +1,5 @@
+<tr>
+  {{#each @item key="@index" as |col|}}
+    <td>{{format-cell col.row col.col}}{{@dateSince}}</td>
+  {{/each}}
+</tr>

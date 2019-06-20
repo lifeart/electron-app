@@ -1,0 +1,32 @@
+<input 
+  id="dataSize" 
+  type="range" 
+  onchange={{action this.updateDataSize value="target.value"}} 
+  name="dataSize" 
+  min="1"
+  max="10" 
+  value="1">
+<div class="table-wrapper">
+  <table id="dataTable">
+    <thead>
+      <tr>
+        {{#each this.header as |item|}}
+          <th>{{item}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+
+    {{#vertical-collection
+      this.tableData
+      tagName="tbody"
+      containerSelector=".table-wrapper"
+      estimateHeight=22
+      staticHeight=true
+      bufferSize=10
+      renderAll=false
+      renderFromLast=false
+     as |item|}}
+      <PerfRow @item={{item}} @dateSince={{this.dateSince}} />
+    {{/vertical-collection}}
+  </table>
+</div>
