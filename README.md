@@ -10,7 +10,7 @@ This is demo app, created to show ability manage large table inside electron on 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) (with yarn)
 
 ## Installation
 
@@ -29,9 +29,9 @@ You will need the following things properly installed on your computer.
 
 ### Linting
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `yarn lint:hbs`
+* `yarn lint:js`
+* `yarn lint:js -- --fix`
 
 ### Deploying
 
